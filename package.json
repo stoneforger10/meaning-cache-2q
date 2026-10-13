@@ -1,0 +1,1 @@
+{"name":"meaning-cache-2q","private":true,"type":"module","dependencies":{"genlayer-js":"1.1.8"},"scripts":{"check:sdk":"node scripts/sdk-check.mjs"}}

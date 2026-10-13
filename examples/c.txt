@@ -1,0 +1,1 @@
+Every request to the health status endpoint is logged with a unique correlation identifier.

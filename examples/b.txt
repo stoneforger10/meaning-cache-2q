@@ -1,0 +1,1 @@
+The temporary debug logs are automatically deleted after seven days.

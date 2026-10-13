@@ -1,0 +1,1 @@
+The batch export job may run only after a second authorized reviewer has approved it.
