@@ -1,0 +1,27 @@
+{
+  "network": "studionet",
+  "contract": "0x8acF9007220093ab3bbfB02CdE3012C0965882cc",
+  "creator": "0x7a413BB4AB62E31d62d4cD9efC8C8a8Dae37FB42",
+  "commit": "43fc2d996378d69e448652dbf1eb49b9995b37f7",
+  "capacity": 2,
+  "retention": 518400,
+  "normalized_source_sha256": "9ae18a601dd2e53888d8b7965e32192dffa8febff31605c8bb12511472f53faa",
+  "verified_receipts": {
+    "deployment": "0x6c1f74e6556f1b612dd55d42b6f097a8eab221a6d20862d3e271d5ce5cfcff2a",
+    "admit_a": "0x74349ceae6d6ccea0d7c0b30152701d702a04905733a04c274d9bf917391de7b",
+    "admit_b": "0x438d8a98d045acc57b06ac08836e2cb3759dfb0917a14fabf4939200b1241a23",
+    "semantic_hit": "0xfc2ef1341bde9f15af3d2da0acce2b80c8c1d3145ed08709ec089dcbf1fddcd5",
+    "protected_eviction": "0xa6cc134c8c4793577cdba33057e8150afdbfbb03952512041c55716c5f62b332",
+    "bad_source_bypass": "0xcc9eb1c72de14f2394e2344b5231fc034da9a06f3dab3a55a106e9f2228fd99a",
+    "replay_expected_error": "0x2a0298d8cdbb5c1816a35e2775543a59df009610414d333565bad744e8313012"
+  },
+  "excluded_from_successful_lifecycle": {
+    "digit_only_hash_argument_type_error": "0x2aa7dc562eca36301a549d041ab56fe05dd3295d64b86ddeec5c432accb8cfd0"
+  },
+  "final_sequence": 5,
+  "final_head": "9a80985bd3aed13a7d603f451b5f5a81d7808c0ddbe0a2eae685cd0a7db7baea",
+  "protected": ["a6e0b129a7ce0a5aa834add777667a8bec4452a3aa8b6eea9ea6ee1122d1f08c"],
+  "probation": ["e2e7927b3952d8f83fc2de23ac866006ee50ca75efd26f53ee5e79dcc153b28a"],
+  "evicted_b": "8c9a78788e6afcf07da7877dd47bca52e27cd20e41c149d393cba4bc522caa10",
+  "live_not_exercised": ["UNKNOWN", "multiple_SAME", "TTL_purge", "protected_overflow_demotion"]
+}

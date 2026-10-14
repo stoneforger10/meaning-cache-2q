@@ -56,6 +56,8 @@ Queue order is LRU to MRU. Protected capacity is `floor(capacity/2)`, leaving at
 least one probation slot. Entry expiration is fixed at admission and never extended
 by a hit. Historical entries and request receipts remain readable after eviction
 or expiry. Residency is bounded; total audit history is **not** bounded or erased.
+`get_cache` exposes persisted queues, which may contain expired entries until pruning;
+clients must inspect entry expiration. `access` never reuses an expired entry.
 This coordinates canonical working sets; it does not promise reduced chain storage,
 lower inference costs or faster HTTP responses.
 
@@ -162,3 +164,13 @@ The optional one-shot signed-payload transport never exports keys and caches unk
 failures as well as successes within its process. Never restart a failed broadcast
 without inspecting the receipt or wallet history. StudioNet is gasless; no funding.
 See [LIVE_PROOFS.md](LIVE_PROOFS.md) for verified evidence, not planned transactions.
+
+## Verified StudioNet lifecycle
+
+[Deployed contract](https://explorer-studio.genlayer.com/address/0x8acF9007220093ab3bbfB02CdE3012C0965882cc)
+matches the pinned published source. A differently hashed paraphrase produced HIT
+and protected A. The next MISS evicted B instead of A. Wrong-hash evidence recorded
+BYPASS without altering residency; replay failed without changing the journal.
+Six successful finalized receipts plus the expected replay error are documented,
+with one earlier argument-type failure explicitly excluded from successful proofs.
+UNKNOWN and TTL purge are locally tested only. See [submission text](SUBMISSION.md).
